@@ -1,0 +1,222 @@
+/* CSS reset */
+*{
+    margin:0;
+    padding:0;
+}
+/* CSS variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigattion Bar */
+.navbar{
+    display:flex;
+    align-items:center;
+    position: fixed;
+    font-family: 'Baloo Bhai 2', cursive;
+    /* justify-content:center; */
+}
+
+/* Navigattion Bar :logo and img*/
+#logo{
+    margin:6px;
+    padding: 3px;
+    /* height:49px; */
+}
+#logo img {
+    width:50px;
+    height:45px;
+    margin:-5px 6px;
+}
+
+/* Navigattion Bar :list styling*/
+.navbar ul{
+    display:flex;
+    /* align-items:center;
+    justify-content:center; */
+}
+.navbar::before{
+    content:"";
+    background-color: rgb(111, 166, 170);
+    position:absolute;
+    height:100%;
+    width: 1500px;; 
+    z-index:-1;
+    opacity: 1;
+    top:0;
+    left:0;
+}
+.navbar ul li{
+    list-style:none;
+    font-size:1.3rem;
+}
+.navbar ul li a{
+    color:white;
+    display:block;
+    padding:3px 18px;
+    border-radius:10px;
+    text-decoration:none;
+}
+
+.navbar ul li a:hover{
+    color:black;
+    background-color: blanchedalmond;
+}
+
+/* Home Section */
+#home{
+    display:flex;
+    /* display: block; */
+    flex-direction: column;
+    padding:4px 310px;
+    width:720px;
+    height:400px;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+#home::before{
+    content:"";
+    background:url('../bg.jpg') no-repeat center center/cover;
+    position:absolute;
+    height:75%;
+    width:100%;
+    z-index:-1;
+    opacity:0.8;
+    top:0;
+    left:0;
+
+}
+#home h1{
+    text-align:center;
+    font-family: 'Ubuntu', sans-serif;
+}
+#home p{
+    text-align:center;
+    font-size:1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Services section */
+.services{
+    margin:4px 8px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    
+}
+.services .box{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin:0px 20px;
+    border:2px solid brown;
+    border-radius:10px;
+    padding:0px 12px;
+    width:444px;
+    height:250px;
+    background-color:rgb(246, 237, 240);
+}
+.service-container h1{
+    padding-top:80px;
+    
+}
+.services .box #pizza{
+    width:87px;
+    height: 96px;
+    background-color:rgb(246, 237, 240) ;
+}
+.services .box #catering{
+    width:93px;
+    height: 74px;
+    padding:10px;
+}
+#ordering{
+    width:100px;
+    height:78px;
+    padding:8px;
+}
+
+/* Clients Section */
+.clients-container{
+    margin-top: 15px;
+}
+.clients-container::before{
+    content:"";
+    background: url('../salad.jpg') no-repeat center center/cover;
+    position:absolute;
+    width:100%;
+    height:40%;
+    z-index: -1;
+    opacity:0.3;
+}
+
+.clients{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    width:100%;
+}
+.clients .box{
+    padding:2px 22px;
+}
+.clients .box #apple{
+    width:108px;
+    height:103px;
+    padding-bottom: 10px;
+}
+.clients .box #ms{
+    width:150px;
+    height:150px;
+    padding-top: 5px;
+}
+.clients .box #skype{
+    width:150px;
+    /* height:150px; */
+    padding-top: 4px;
+}
+
+/* Contact Us */
+
+
+/* footer */
+.foot{
+    background-color: black;
+    color: white;
+    padding: 9px 480px;
+}
+/* Utility Classes */
+.h-primary{
+    font-size:3rem;
+    padding:22px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.h-secondary{
+    font-size:1.2rem;
+    padding:7px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color:rgb(107, 221, 126);
+    color:white;
+    border-radius: 10px;
+    margin:15px;
+    font-size:1.5rem;
+    cursor:pointer;
+}
+.btn:hover{
+    
+    border: 2px solid black ;
+    border-radius: 10px;
+    background-color:blue;
+    color: white;
+    font-size: 1.5rem;
+}
+.center{
+    text-align:center;
+}
